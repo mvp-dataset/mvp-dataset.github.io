@@ -191,16 +191,17 @@
       <div class="section details">
         <h2>Details</h2>
         <br>
-        <p><b>Partial-to-Partial Point Cloud Registration</b> evaluates the performance of conducting partial-to-partial point cloud registration. 
-          This is a large subset of MVP, containing massive high-quality incomplete and complete point clouds generated from 3D CAD models. It contains
-          <b>163,800</b> number of <b>partial point clouds</b> and <b>6,300</b> number of <b> complete point clouds</b> from <b>16</b> number of object categories:</p>
+        <p><b>Partial-to-Partial Point Cloud Registration</b> evaluates the performance on partial-to-partial point cloud registration. 
+          This is a large subset of MVP, containing massive high-quality incomplete point cloud pairs, and each partial point cloud pair is generated 
+          from the same 3D CAD model. It contains <b>9,600</b> number of <b>partial point clouds</b>:</p>
           <ul>
-          <li><p>The Training set has <b>62,400</b> point cloud pairs, and their corresponding category labels. </p>
+          <li><p>The Training set has <b>6,400</b> partial point cloud pairs, groundtruth correspondences, category labels and complete point clouds. </p>
           </li>
-          <li><p>The Testing set has <b>41,600</b> point cloud pairs, and their corresponding category labels. </p>
+          <li><p>The Testing set has <b>1,200</b> transformed partial point cloud pairs, canonical partial point cloud pairs, groundtruth transformations,
+            groundtruth correspondences, category labels and complete point clouds. </p>
           </li>
-          <li><p>The ExtraTesting set has <b>59,800</b> partial point clouds, and their corresponding category labels.  
-            We keep the groundtruth complete point clouds, and you can evaluate your method by submitting your results on the 
+          <li><p>The ExtraTesting set has <b>2,000</b> transformed partial point cloud pairs, and category labels. </p>
+            We keep the groundtruth transformations, and you can evaluate your method by submitting your results on the 
             <a href="https://competitions.codalab.org/competitions/33430">Codalab website</a>.</p>
           </li>
           </ul>
@@ -212,22 +213,22 @@
           <center>
             <li class="grid">
               <div class="griditem">
-                <a href="https://drive.google.com/file/d/1bY2RfPj_DvviNpr6ZzrEqhl4f7fMIqPF/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
-                <br>  <a href="https://drive.google.com/file/d/1bY2RfPj_DvviNpr6ZzrEqhl4f7fMIqPF/view?usp=sharing">MVP_Train_CP.h5</a>
+                <a href="https://drive.google.com/file/d/1k6JRRKY-_a9oTBS4M-DUMxG76SyJOjbs/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+                <br>  <a href="https://drive.google.com/file/d/1k6JRRKY-_a9oTBS4M-DUMxG76SyJOjbs/view?usp=sharing">MVP_Train_RG.h5</a>
               </div>
             </li>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="grid">
               <div class="griditem">
-                <a href="https://drive.google.com/file/d/1qJT4uNURyDnPb_tI2vAntT2Iq98lhQMi/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
-                <br>  <a href="https://drive.google.com/file/d/1qJT4uNURyDnPb_tI2vAntT2Iq98lhQMi/view?usp=sharing">MVP_Test_CP.h5</a>
+                <a href="https://drive.google.com/file/d/16jSMsYZOI8QU-g0_TgqWbxzuzauSKCBQ/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+                <br>  <a href="https://drive.google.com/file/d/16jSMsYZOI8QU-g0_TgqWbxzuzauSKCBQ/view?usp=sharing">MVP_Test_RG.h5</a>
               </div>
             </li>
             
             <li class="grid">
               <div class="griditem">
-                <a href="https://drive.google.com/file/d/1u2IR2LTcyC-e3GuvCxHScSllOAGSpl4C/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
-                <br>  <a href="https://drive.google.com/file/d/1u2IR2LTcyC-e3GuvCxHScSllOAGSpl4C/view?usp=sharing">MVP_ExtraTest_Shuffled_CP.h5</a>
+                <a href="https://drive.google.com/file/d/1cu3va7xRWnKw9dGOAVGzkbNOxLi51bAp/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+                <br>  <a href="https://drive.google.com/file/d/1cu3va7xRWnKw9dGOAVGzkbNOxLi51bAp/view?usp=sharing">MVP_ExtraTest_RG.h5</a>
               </div>
             </li>
           </center>
