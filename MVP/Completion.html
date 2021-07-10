@@ -181,127 +181,87 @@
       </div>
       <!--=================Teasers==========================-->
       <div id="img_intro_examples" class="img_container">
-        <center><img src="./teaser.png" border="0" width="90%"></center>
+        <center><img src="./mvp.png" border="0" width="90%"></center>
       </div>
       <div class="section">
-        <p style="text-align:justify"><b>Improvements over BasicVSR</b>. BasicVSR++ consists of two effective
-          modifications for improving
-          propagation and alignment. The proposed <i>second-order grid propagation</i> and <i>flow-guided deformable
-            alignment</i> allow BasicVSR++ to significantly outperform existing state of the arts with comparable
-          runtime.</p>
+        <p align="justify">
+          <b>Multi-View Partial (MVP) Point Cloud Dataset.</b></a> <b>(a)</b> shows an example for our 26 uniformly distributed camera poses on a unit sphere. 
+          <b>(b)</b> presents the 26 partial point clouds for the airplane from our uniformly distributed virtual cameras. <b>(c)</b> compares the rendered 
+          incomplete point clouds with different camera resolutions. <b>(d)</b> shows that Poisson disk sampling generates complete point clouds with a 
+          higher quality than uniform sampling.
+        </p>
+        
       </div>
 
-      <!--=================Highlights==========================-->
-      <div class="section abstract">
-        <h2>Highlights</h2>
-        <ol>
-          <li>BasicVSR++ won 3 champions and 1 runner-up in NTIRE 2021 Video Restoration and Enhancement Challenge.
-          </li>
-          <li>BasicVSR++ surpasses existing state-of-the-art VSR methods by a large margin with comparable complexity.
-          </li>
-        </ol>
-      </div>
-      <!--=================Materials==========================-->
-      <div class="section materials" ,="" id="materials">
-        <h2>Materials</h2>
-        <table width="100%" align="center" border="none" cellspacing="0" cellpadding="30">
-          <tbody><tr>
-            <td width="60%">
-              <center>
-                <a href="https://arxiv.org/abs/2012.02181" target="_blank" class="imageLink"><img src="./thumbnail.png" ,="" width="52%"></a><br><br>
-                <a href="https://arxiv.org/abs/2012.02181" target="_blank">Paper</a>
-              </center>
-            </td>
-            <td width="40%" valign="middle">
-              <center>
-                <a href="https://github.com/ckkelvinchan/BasicVSR-IconVSR" target="_blank" class="imageLink"><img src="./icon_github.png" ,="" width="50%"></a><br><br>
-                <a href="https://github.com/open-mmlab/mmediting" target="_blank">Codes (coming soon)</a>
-              </center>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
+      <div class="section news">
+	  
+        <h2>News</h2>
+        <p><strong>2021-07-10</strong> The benchmark, <b>"Single-View Point Cloud Completion" has been released</b>.<img src = './MVP/new.jpg' width = '28'></p>
+        <p><strong>2021</strong> The MVP challenges will be hosted in the <a href="https://sense-human.github.io"><b>ICCV2021 Workshop: Sensing, Understanding and Synthesizing Humans</b></a></p>.
+      </div>	
 
       <!--=================Abstract==========================-->
-      <div class="section abstract">
-        <h2>Abstract</h2>
+      <div class="section details">
+        <h2>Details</h2>
         <br>
-        <p style="text-align:justify">
-          A recurrent structure is a popular framework choice for the task of video super-resolution. The
-          state-of-the-art method BasicVSR adopts bidirectional propagation with feature alignment to effectively
-          exploit information from the entire input video. In this study, we redesign BasicVSR by proposing second-order
-          grid propagation and flow-guided deformable alignment. We show that by empowering the recurrent framework with
-          the enhanced propagation and alignment, one can exploit spatiotemporal information across misaligned video
-          frames more effectively. The new components lead to an improved performance under a similar computational
-          constraint. In particular, our model BasicVSR++ surpasses BasicVSR by 0.82 dB in PSNR with similar number of
-          parameters. In addition to video super-resolution, BasicVSR++ generalizes well to other video restoration
-          tasks such as compressed video enhancement. In NTIRE 2021, BasicVSR++ obtains three champions and one
-          runner-up in the Video Super-Resolution and Compressed Video Enhancement Challenges.
-        </p>
+        <p><b>Single-View Point Cloud Completion Benchmark</b> evaluates the performance of generating complete 3D point clouds based on single-view partial point clouds. 
+          This is a large subset of MVP, containing massive high-quality incomplete and complete point clouds generated from 3D CAD models. It contains
+          <b>163,800</b> number of <b>partial point clouds</b> and <b>6,300</b> number of <b> complete point clouds</b> from <b>16</b> number of object categories:</p>
+          <ul>
+          <li><p>The Training set has 62,400 point cloud pairs. </p>
+          </li>
+          <li><p>The Testing set has 41,600 point cloud pairs. </p>
+          </li>
+          <li><p>The ExtraTesting set has 59,800 point cloud pairs. </p>
+          </li>
+          </ul>
       </div>
 
-      <!--=================Network Details==========================-->
-      <div class="section" ,="" id="networkdetails">
-        <h2> Network Details</h2>
-        <p style="text-align:justify">
-          <b>Left:</b> The overview of BasicVSR++; <b>Right:</b> The proposed flow-guided deformable alignment module.
-          See our paper for more details.
-        </p>
-        <center>
-          <div class="leftView">
-            <div class="mask" style="width:60px;height:10px"></div>
-            <img class="small" style="width: 100%;" src="./details.png">
+      <div class="section download">
+        <h2>Download</h2>
+            
+            <ul>
+              <li class="grid">
+              <div class="griditem">
+          <a href="https://drive.google.com/file/d/1bY2RfPj_DvviNpr6ZzrEqhl4f7fMIqPF/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+            MVP_Train_CP.h5
           </div>
-        </center>
-
+              </li>
+            
+            <li class="grid">
+              <div class="griditem">
+          <a href="https://drive.google.com/file/d/1qJT4uNURyDnPb_tI2vAntT2Iq98lhQMi/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+            MVP_Test_CP.h5
+          </div>
+              </li>
+            
+            <li class="grid">
+              <div class="griditem">
+          <a href="https://drive.google.com/file/d/1u2IR2LTcyC-e3GuvCxHScSllOAGSpl4C/view?usp=sharing" target="_blank" class="imageLink"><img src="./hdf5.png"></a><br>
+            MVP_ExtraTest_Shuffled_CP.h5
+          </div>
+              </li>
       </div>
 
-      <!--=================Results==========================-->
-      <div class="section" ,="" id="results">
-        <h2>Results</h2>
-        <p style="text-align:justify">
-          <b>Results of 4x super-resolution:</b> By better employing the information from the video, BasicVSR++
-          successfully reconstructs the finer details.
-        </p>
-        <div id="results" class="img_container">
-          <center>
-            <div class="mask" style="width:30px;height:10px"></div>
-            <img class="small" style="width: 95%;" src="./results.png">
-          </center>
-        </div>
-        <br>
-      </div>
       <!--=================Citation==========================-->
       <div class="section citation" ,="" id="citation">
         <h2>Citation</h2>
         <div class="section bibtex">
-          <pre>@article{chan2021basicvsr++,
-  author = {Chan, Kelvin C.K. and Zhou, Shangchen and Xu, Xiangyu and Loy, Chen Change},
-  title = {BasicVSR++: Improving Video Super-Resolution with Enhanced Propagation and Alignment},
-  booktitle = {arXiv preprint arXiv:2104.13371},
-  year = {2021}
-}
-          </pre>
+          <pre>@inproceedings{pan2021variational,
+            title={Variational Relational Point Completion Network},
+            author={Pan, Liang and Chen, Xinyi and Cai, Zhongang and Zhang, Junzhe and Zhao, Haiyu and Yi, Shuai and Liu, Ziwei},
+            booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+            pages={8524--8533},
+            year={2021}
+          }</pre>
         </div>
       </div>
-      <div class="section" ,="" id="related_work">
-        <h2>Related Work</h2>
-        <p style="text-align:justify">
-        </p><ol>
-          <li><b><a href="https://ckkelvinchan.github.io/projects/BasicVSR">
-                BasicVSR</a></b>: Our BasicVSR++ is built upon BasicVSR. It is a simple yet effective network for video
-            super-resolution.</li>
-          <li><b><a href="https://ckkelvinchan.github.io/projects/GLEAN">
-                GLEAN</a></b>: GLEAN is our attempt in image super-resolution that leverages a pre-trained StyleGAN as a
-            generative latent bank.</li>
-        </ol>
-        <p></p>
-      </div>
+
       <!--=================Contact==========================-->
       <div class="section contact">
         <h2 id="contact">Contact</h2>
-        <p style="text-align:justify">If you have any question, please contact Kelvin Chan at
-          <strong>chan0899@e.ntu.edu.sg</strong>.
+        <p style="text-align:justify">If you have any question, please contact Liang Pan at
+          <strong>liang.pan@ntu.edu.sg</strong>.
         </p>
       </div>
 
