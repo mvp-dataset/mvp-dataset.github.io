@@ -197,7 +197,7 @@
       <div class="section details">
         <h2>Details</h2>
         <br>
-        <p><b>Single-View Point Cloud Completion Benchmark</b> evaluates the performance of generating complete 3D point clouds based on single-view partial point clouds. 
+          <p><b>Single-View Point Cloud Completion Benchmark</b> evaluates the performance of generating complete 3D point clouds based on single-view partial point clouds. 
           This is a large subset of MVP, containing massive high-quality incomplete and complete point clouds generated from 3D CAD models. It contains
           <b>163,800</b> number of <b>partial point clouds</b> and <b>6,300</b> number of <b> complete point clouds</b> from <b>16</b> number of object categories:</p>
           <ul>
@@ -207,12 +207,14 @@
           </li>
           <li><p>The ExtraTesting set has <b>59,800</b> partial point clouds, and their corresponding category labels.  
             We keep the groundtruth complete point clouds, and you can evaluate your method by submitting your results on the 
-            <a href="https://competitions.codalab.org/competitions/33430">Codalab website</a>.  The general pipeline is training 
-            your method on the Training set while evaluating on the Testing set.  Finally, you can generate your results for the
-            ExtraTest set by your best model. Note that the Training set and Testing set are the same with the data (2048 points) prepared in the paper
-            <a href="https://arxiv.org/abs/2104.10154"><b>VRCNet</b></a>. Using the Testing set for training is strictly forbidden. </p>
+            <a href="https://competitions.codalab.org/competitions/33430">Codalab website</a>. </p>
           </li>
           </ul>
+          <p>The general pipeline is training your method on the Training set while evaluating on the Testing set.  
+            Finally, you can generate your results for the ExtraTest set by your best model. 
+            Note that the Training set and Testing set are the same with the data (2048 points) prepared in the paper
+            <a href="https://arxiv.org/abs/2104.10154"><b>VRCNet</b></a>. 
+            Using the Testing set for training is strictly forbidden.</p>
       </div>
 
       <div class="section download">
